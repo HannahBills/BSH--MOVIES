@@ -1,0 +1,32 @@
+google font
+header 
+navigation bar
+main content 
+footer
+
+heading
+ Movie/Music Ranking Site
+Paragraph below e.g an online platform for sharing my taste in favorite movies or music
+
+background image
+
+categories/Genres
+-Action
+thriller
+Adventure
+
+music
+Afrobeat
+
+top 5 music and movie
+
+-image
+-title
+category
+in the order of there ranking put stars
+
+every movie should have link to youtube
+
+add web pages for categories
+
+Add a favicon

@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: #000;
+}
+
+header{
+    width: 100%;
+    height: auto;
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2%;
+        width: 80%;
+        margin: 0 auto;
+
+        div{
+            display: flex;
+            align-items: center;
+
+            img{
+                width: 50px;
+            }
+
+            h4{
+                font-size: 40px;
+                margin-left: 15px;
+
+                span{
+                    color: #ff7d43;
+                }
+            }
+            a{
+                font-size: 20px;
+                margin-left: 15px;
+                background-color: #ff7d43;
+                padding: 5px;
+                border-radius: 8px;
+            }
+        }
+
+        input{
+            width: 250px;
+            height: 40px;
+            border: 1px solid #ff7d43;
+            border-radius: 25px;
+            padding: 0 15px;
+            outline: none;
+            background: transparent;
+        }
+        .bx{
+            font-size: 20px;
+            position: relative;
+            left: -32px;
+        }
+    }
+
+    .title{
+        margin-top: 10px;
+        margin-bottom: 20px;
+        text-align: center;
+
+        h2{
+            color: #ff7d43;
+        }
+    }
+
+    .image{
+        width: 100%;
+        height: 430px;
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+main{
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    .categories{
+        width: 80%;
+        margin: 0 auto;
+        padding: 2%;
+
+        h4{
+            font-size: 25px;
+            text-align: center ;
+            margin-bottom: 10px;
+        }
+
+        .cotegory-list{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+            gap: 2rem;
+            margin-bottom: 50px;
+            li{
+                display: flex;
+                justify-content: center;
+                list-style: none;
+                padding: 2%;
+                border-radius: 3px;
+                background-color: #ff7d43;
+                a{
+                    text-decoration: none;
+                }
+            }
+        }
+
+   .load{
+    width: 100%;
+    text-align: center;
+    a{
+        background-color: #272525dc;
+        padding: 1%;  
+        border-radius: 3px;
+        text-decoration: none;
+    }
+   }
+    }
+
+    .favourate{
+        padding: 2%;
+
+        h4{
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 25px;
+        }
+        .ranking{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+            gap: 1.5rem;
+            width: 80%;
+            margin: 0 auto;
+            a{
+                text-decoration: none;
+            }
+            .rank{
+                height: 400px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                .footer{
+                    background: #00000080;
+                    position: relative;
+                    top: -90px;
+                    padding: 2%;
+                    .flex-footer{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        div{
+                            color: #ff7d43;
+                        }
+                        .bxs-star{
+                            color: #ff7d43;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .best_music{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        gap: 1.5rem;
+        width: 80%;
+        margin: 0 auto;
+        .music_block{
+            height: 350px;
+            .img_music{
+                width: 100%;
+                height: 300px;
+                position: relative;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+
+
+                }
+                .bx-play-circle{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-size: 40px;
+                    color: #ff7d43;
+                }
+            }
+        }
+
+        .music_footer{
+            h5{
+                font-size: 25px;
+            }
+            p{
+                font-size: 13px;
+            }
+        }
+    }
+   
+}
+
+
+footer{
+    width: 100%;
+    text-align: center;
+    padding: 2%;
+
+    span{
+        color: #ff7d43;
+    }
+}
+
+@media (max-width: 1000px){
+    nav{
+        img{
+            width: 50px;
+            height: 50px;
+        }
+        h4{
+            font-size: 20px !important; 
+        }
+       
+        .bx{
+            font-size: 13px !important;
+        }
+    }
+    input{
+        width: 150px !important;
+        height: 30px !important;
+    }
+    .title{
+        width: 80%;
+        margin: 0 auto;
+
+        h2{
+            font-size: 15px;
+        }
+        p{
+            font-size: 13px;
+        }
+    }
+}
+
+@media (max-width: 600px){
+    nav{
+        display: block !important;
+        .bx{
+            font-size: 15px !important;
+            top: 8px !important;
+        }
+    }
+    input{
+        margin-top: 15px;
+        width: 100% !important;
+    }
+    
+}
